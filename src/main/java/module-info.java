@@ -1,6 +1,8 @@
 module com.example.kursach {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
+    requires mysql.connector.java;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;

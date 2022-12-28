@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.mainWindow">
+  <tabs>
+    <Tab text="Работники">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="workersTable" layoutX="55.0" layoutY="86.0" prefHeight="200.0" prefWidth="490.0">
+                    <columns>
+                      <TableColumn fx:id="idClmW" prefWidth="30.0" text="ID" />
+                      <TableColumn fx:id="nameClmW" prefWidth="132.0" text="Имя" />
+                        <TableColumn fx:id="postClmW" prefWidth="82.0" text="Должность" />
+                        <TableColumn fx:id="birthClmW" prefWidth="103.0" text="Дата рождения" />
+                        <TableColumn fx:id="passClmW" prefWidth="81.0" text="Паспорт" />
+                        <TableColumn fx:id="expertClmW" prefWidth="63.0" text="Стаж" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="deleteBtnW" layoutX="485.0" layoutY="311.0" mnemonicParsing="false" text="Удалить" />
+                  <Button fx:id="addBtnW" layoutX="55.0" layoutY="311.0" mnemonicParsing="false" text="Добавить" />
+                  <Button fx:id="changeBtnW" layoutX="265.0" layoutY="311.0" mnemonicParsing="false" text="Изменить" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Продукция">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="productTable" layoutX="95.0" layoutY="86.0" prefHeight="200.0" prefWidth="411.0">
+                    <columns>
+                      <TableColumn fx:id="idClmP" prefWidth="30.0" text="ID" />
+                      <TableColumn fx:id="idsClmP" prefWidth="72.0" text="ID склада" />
+                        <TableColumn fx:id="nameClmP" prefWidth="120.0" text="Название" />
+                        <TableColumn fx:id="matClmP" prefWidth="86.0" text="Материал" />
+                        <TableColumn fx:id="expClmP" prefWidth="99.0" text="Срок гарантии" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="deleteBtnP" layoutX="446.0" layoutY="310.0" mnemonicParsing="false" text="Удалить" />
+                  <Button fx:id="addBtnP" layoutX="95.0" layoutY="310.0" mnemonicParsing="false" text="Добавить" />
+                  <Button fx:id="changeBtnP" layoutX="265.0" layoutY="310.0" mnemonicParsing="false" text="Изменить" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Цеха">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="workshopTable" layoutX="97.0" layoutY="86.0" prefHeight="200.0" prefWidth="407.0">
+                    <columns>
+                      <TableColumn fx:id="idClmWS" prefWidth="30.0" text="ID" />
+                      <TableColumn fx:id="idwClmWS" prefWidth="86.0" text="ID работника" />
+                        <TableColumn fx:id="idpClmWS" prefWidth="90.0" text="ID продукции" />
+                        <TableColumn fx:id="descClmWS" prefWidth="200.0" text="Описание" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="deleteBtnWS" layoutX="444.0" layoutY="312.0" mnemonicParsing="false" text="Удалить" />
+                  <Button fx:id="addBtnWS" layoutX="97.0" layoutY="312.0" mnemonicParsing="false" text="Добавить" />
+                  <Button fx:id="changeBtnWS" layoutX="265.0" layoutY="312.0" mnemonicParsing="false" text="Изменить" />
+               </children></AnchorPane>
+          </content>
+      </Tab>
+      <Tab text="Склады">
+          <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="storageTable" layoutX="59.0" layoutY="86.0" prefHeight="200.0" prefWidth="483.0">
+                    <columns>
+                      <TableColumn fx:id="idClmS" prefWidth="30.0" text="ID" />
+                      <TableColumn fx:id="placeClmS" prefWidth="169.0" text="Расположение склада" />
+                        <TableColumn fx:id="numClmS" prefWidth="146.0" text="Количество продукции" />
+                        <TableColumn fx:id="maxClmS" prefWidth="137.0" text="Максимум продукции" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="deleteBtnS" layoutX="482.0" layoutY="312.0" mnemonicParsing="false" text="Удалить" />
+                  <Button fx:id="addBtnS" layoutX="59.0" layoutY="312.0" mnemonicParsing="false" text="Добавить" />
+                  <Button fx:id="changeBtnS" layoutX="266.0" layoutY="312.0" mnemonicParsing="false" text="Изменить" />
+               </children></AnchorPane>
+          </content>
+      </Tab>
+  </tabs>
+</TabPane>

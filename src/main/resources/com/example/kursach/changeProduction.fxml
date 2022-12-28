@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.kursach.changeProduction" prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <TextField fx:id="name" layoutX="60.0" layoutY="90.0" promptText="Название" />
+        <TextField fx:id="material" layoutX="60.0" layoutY="167.0" promptText="Материал" />
+        <DatePicker fx:id="expir" layoutX="60.0" layoutY="250.0" promptText="Срок гарантии" />
+        <TextField fx:id="idStorage" layoutX="360.0" layoutY="90.0" promptText="ID склада" />
+        <Button fx:id="commitBtn" layoutX="60.0" layoutY="317.0" mnemonicParsing="false" text="Применить" />
+        <Label fx:id="message" layoutX="210.0" layoutY="321.0" visible="false" />
+        <Button fx:id="backBtn" layoutX="457.0" layoutY="317.0" mnemonicParsing="false" text="Назад" />
+    </children>
+</AnchorPane>

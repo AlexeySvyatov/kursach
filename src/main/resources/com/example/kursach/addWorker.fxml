@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.addWorker">
+   <children>
+      <TextField fx:id="idWorker" layoutX="60.0" layoutY="90.0" promptText="ID работника" />
+      <TextField fx:id="fullName" layoutX="60.0" layoutY="175.0" promptText="ФИО" />
+      <TextField fx:id="post" layoutX="60.0" layoutY="260.0" promptText="Должность" />
+      <TextField fx:id="passport" layoutX="360.0" layoutY="175.0" promptText="Паспорт" />
+      <TextField fx:id="experience" layoutX="360.0" layoutY="260.0" promptText="Стаж" />
+      <Button fx:id="commitBtn" layoutX="60.0" layoutY="317.0" mnemonicParsing="false" text="Применить" />
+      <Label fx:id="message" layoutX="210.0" layoutY="321.0" visible="false"  text="Пожалуйста, заполните все поля"/>
+      <DatePicker fx:id="dateBirth" layoutX="360.0" layoutY="90.0" />
+      <Button fx:id="backBtn" layoutX="457.0" layoutY="317.0" mnemonicParsing="false" text="Назад" />
+      <TextField fx:id="password" layoutX="60.0" layoutY="134.0" promptText="Пароль" />
+   </children>
+</AnchorPane>

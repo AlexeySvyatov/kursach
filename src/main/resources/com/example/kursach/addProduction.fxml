@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.addProduction">
+   <children>
+      <TextField fx:id="idProduction" layoutX="60.0" layoutY="90.0" promptText="ID продукции" />
+      <TextField fx:id="idStorage" layoutX="60.0" layoutY="167.0" promptText="ID склада" />
+      <TextField fx:id="name" layoutX="60.0" layoutY="260.0" promptText="Название" />
+      <TextField fx:id="material" layoutX="360.0" layoutY="90.0" promptText="Материал" />
+      <DatePicker fx:id="expir" layoutX="360.0" layoutY="167.0" promptText="Срок гарантии" />
+      <Button fx:id="commitBtn" layoutX="60.0" layoutY="317.0" mnemonicParsing="false" text="Применить" />
+      <Label fx:id="message" layoutX="210.0" layoutY="321.0" text="Пожалуйста, заполните все поля" />
+      <Button fx:id="backBtn" layoutX="457.0" layoutY="317.0" mnemonicParsing="false" text="Назад" />
+   </children>
+</AnchorPane>
